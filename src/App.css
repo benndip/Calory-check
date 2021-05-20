@@ -648,10 +648,13 @@ a {
 .AddFoodItem {
   border-bottom: 1px solid #b5c4b7;
   padding: 18px 30px 18px 23px;
+  background-color: rgb(21, 90, 48);
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
 }
 
 .AddFoodItem__link {
-  color: #003300;
+  color: #ffffff;
 }
 
 .AddFoodItem__link:hover {
@@ -661,8 +664,8 @@ a {
 }
 
 .AddFoodItem img {
-  width: 25px;
-  margin-right: 40px;
+  width: 20px;
+  margin-right: 10px;
 }
 
 .AddFoodItem span {
@@ -689,7 +692,8 @@ a {
 }
 
 .ActivityInput {
-  margin-bottom: 70px;
+  margin-bottom: 60px;
+  padding-left: 10px;
 }
 
 .ActivityInput img {
@@ -730,15 +734,15 @@ span.ActivityInput__calslabel.active {
 }
 
 .NetCalories {
-  padding: 0;
+  margin-right: 50%;
   color: #222722;
   height: 126px;
 }
 
 .NetCalories__number {
-  font-size: 44px;
+  font-size: 40px;
   font-weight: bold;
-  padding-right: 18px;
+  padding-right: 10px;
 }
 
 .NetCalories__label {
@@ -1660,12 +1664,218 @@ img.addable-item__delete {
   }
 
   .LogInView__form form {
-    width: 65%;
+    width: 70%;
     margin: 40px auto;
   }
 
   .LogInView p {
     text-align: center;
     font-size: 14px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .Header-container {
+    display: flex;
+    flex-direction: row;
+    width: 10%;
+  }
+  .Header {
+    border-bottom: 1px solid #b5c4b7;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 10%;
+    background: white;
+    z-index: 999;
+  }
+  .Header nav {
+    width: 100%;
+    position: relative;
+    top: 11px;
+    display: flex;
+    flex-direction: row;
+  }
+  .Header nav a {
+    margin-left: 10px;
+    color: #003300;
+  }
+  .Header img {
+    width: 100px;
+    display: inline;
+    margin-right: 60px;
+  }
+  .nav__today-link {
+    background-color: #08ae23;
+    padding: 5px;
+    border-radius: 7px;
+    color: white !important;
+    border: 2px solid #079b1f;
+  }
+
+  .nav__today-link:hover {
+    background-color: #0bbb28;
+  }
+  .content-container {
+    width: 100%;
+    margin: 20px auto 10 auto;
+  }
+  .DaySelect {
+    margin: 0 0 0 20px;
+    width: 250px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+  }
+  .DaySelect__calendar {
+    width: 30px;
+    height: 54px;
+    background: url("resources/calendar-icon.png") left no-repeat;
+    background-size: 100%;
+    display: inline-block;
+  }
+
+  .DaySelect--today-button {
+    position: absolute;
+    top: -26px;
+    left: 115px;
+  }
+  .DaySelect__arrow.left {
+    margin-right: 26px;
+    background: url("resources/left-arrow-icon.png") left no-repeat;
+    background-size: 70%;
+    margin-top: 20px;
+  }
+  .DaySelect__arrow.right {
+    margin-left: 26px;
+    background: url("resources/right-arrow-icon.png") left no-repeat;
+    background-size: 70%;
+    margin-top: 20px;
+  }
+  .Calotron__net {
+    display: block;
+    font-size: 45px;
+    font-weight: bold;
+    color: #222722;
+  }
+  .NetCalories {
+    padding-right: 0;
+    color: #222722;
+    height: 126px;
+  }
+  .MealGroup {
+    margin-bottom: 45px;
+  }
+
+  .ActivityInput {
+    margin-bottom: 60px;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: row;
+    padding-right: 30px;
+  }
+  .ActivityInput img {
+    width: 40px;
+    height: 30px;
+    margin-right: 10px;
+    margin-top: 10px;
+  }
+  .ActivityInput span {
+    font-size: 20px;
+    position: relative;
+  }
+  .ActivityInput input {
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: 2px solid #98a299;
+    width: 50px;
+    text-align: center;
+    margin-left: 10px;
+    font-size: 28px;
+  }
+  span.ActivityInput__calslabel {
+    font-size: 20px;
+    color: #767676;
+    position: relative;
+    top: 0;
+    margin-left: 8px;
+  }
+  .NetCalories {
+    display: flex;
+    flex-direction: column;
+    padding-right: 0;
+    color: #222722;
+    height: 100px;
+  }
+  .NetCalories__equation {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .NetCalories__number {
+    font-size: 30px;
+    font-weight: bold;
+    padding-right: 22px;
+  }
+  .NetCalories__label {
+    position: relative;
+    bottom: 1px;
+    font-size: 12px;
+  }
+  .NetCalories__equals {
+    padding: 0 0 0 30px;
+  }
+  .NetCalories__number.net {
+    font-size: 30px;
+    padding: 0;
+  }
+
+  .NetCalories__minussign,
+  .NetCalories__equals {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0 34px;
+  }
+  .NetCalories__number.food {
+    color: #c22317;
+  }
+
+  .NetCalories__number.exercise {
+    color: #08ae23;
+  }
+
+  .NetCalories__goaldifference {
+    display: block;
+    float: right;
+    font-weight: bold;
+    font-size: 25px;
+    position: relative;
+    bottom: 20px;
+    left: 300px;
+    top: 2px;
+  }
+
+  .MacroTotals__macro {
+    margin-right: 30px;
+  }
+  .MacroTotals__label {
+    font-size: 17px;
+    margin-right: 20px;
+  }
+  .MacroTotals__macro.protein {
+    margin-right: 0;
+    margin-left: 85px;
+  }
+  .MacroTotals__caloriesgoal {
+    font-size: 25px;
+    color: #6c6c6c;
+    padding-right: 20px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 20px;
   }
 }
