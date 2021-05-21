@@ -1642,6 +1642,9 @@ img.addable-item__delete {
 /******************************* responsive stylings ************************/
 
 @media only screen and (max-width: 420px) {
+  .App {
+    overflow-x: hidden;
+  }
   .content-container.LogInView {
     width: 100%;
   }
@@ -2118,23 +2121,6 @@ img.addable-item__delete {
     float: left;
   }
 
-  .MyGoals__form input:focus {
-    border-color: #08ae23;
-    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.05);
-  }
-
-  .MyGoals__form button {
-    margin: 25px 0px 0px 25px;
-  }
-
-  .MyGoals__form button.saving {
-    background-color: #bdbdbd;
-    cursor: default;
-  }
-
-  .MyGoals__form--save-success {
-    color: #056e46;
-  }
   .CreateFoodView__submit-button {
     background-color: #08ae23;
     color: white;
