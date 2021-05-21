@@ -1575,10 +1575,6 @@ img.addable-item__delete {
   border-bottom-right-radius: 10px;
 }
 
-.MyAccountView h1 {
-  margin-bottom: 30px;
-}
-
 .MyGoals__form--input {
   width: 25%;
   float: left;
@@ -1621,12 +1617,15 @@ img.addable-item__delete {
   -moz-animation-duration: 1.8s;
 }
 
-.MyAccountView__account-functions {
-  margin-top: 70px;
+.MyAccountView h1 {
+  margin-bottom: 30px;
 }
 
 .MyAccountView__account-functions p:first-child {
   margin-bottom: 0;
+}
+.MyAccountView__account-functions {
+  margin-top: 70px;
 }
 
 .MyAccountView__logout-link {
@@ -2083,5 +2082,69 @@ img.addable-item__delete {
     flex-direction: row;
     padding-right: 20px;
     width: 100%;
+  }
+
+  .MyAccountView h1 {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .MyAccountView__account-functions {
+    margin-top: 70px;
+  }
+
+  .MyAccountView__account-functions p:first-child {
+    margin-bottom: 0;
+  }
+
+  .MyAccountView__logout-link {
+    cursor: pointer;
+    text-decoration: underline;
+    color: #c22317;
+    display: inline-block;
+  }
+
+  .MyAccountView__logout-link:hover {
+    text-decoration: none;
+  }
+  .MyGoals__form {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 100%;
+    margin-left: 10px;
+  }
+
+  .MyGoals__form--input {
+    width: 100%;
+    float: left;
+  }
+
+  .MyGoals__form input:focus {
+    border-color: #08ae23;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.05);
+  }
+
+  .MyGoals__form button {
+    margin: 25px 0px 0px 25px;
+  }
+
+  .MyGoals__form button.saving {
+    background-color: #bdbdbd;
+    cursor: default;
+  }
+
+  .MyGoals__form--save-success {
+    color: #056e46;
+  }
+  .CreateFoodView__submit-button {
+    background-color: #08ae23;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    margin: 20px 0px 0px 10px;
+  }
+  .MyAccountView__account-functions {
+    margin: 70px 0px 0px 10px;
   }
 }
