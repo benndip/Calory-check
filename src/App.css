@@ -963,6 +963,11 @@ span.FoodsPanel__tab--createfoodbutton.current {
   border: none;
   margin-right: 34px;
 }
+span.FoodsPanel__edit-foods.current {
+  display: inline-block;
+  font-weight: normal;
+  border-bottom: 0px solid #d9291c;
+}
 
 span.FoodsPanel__edit-foods {
   padding: 0;
@@ -971,12 +976,6 @@ span.FoodsPanel__edit-foods {
   border-bottom: 0px solid #d9291c;
   font-size: 15px;
   display: none;
-}
-
-span.FoodsPanel__edit-foods.current {
-  display: inline-block;
-  font-weight: normal;
-  border-bottom: 0px solid #d9291c;
 }
 
 span.FoodsPanel__edit-foods:hover {
@@ -1641,7 +1640,7 @@ img.addable-item__delete {
   text-decoration: none;
 }
 
-/* responsive stylings */
+/******************************* responsive stylings ************************/
 
 @media only screen and (max-width: 420px) {
   .content-container.LogInView {
@@ -1760,11 +1759,7 @@ img.addable-item__delete {
     font-weight: bold;
     color: #222722;
   }
-  .NetCalories {
-    padding-right: 0;
-    color: #222722;
-    height: 126px;
-  }
+
   .MealGroup {
     margin-bottom: 45px;
   }
@@ -1803,12 +1798,14 @@ img.addable-item__delete {
     top: 0;
     margin-left: 8px;
   }
+
   .NetCalories {
     display: flex;
     flex-direction: column;
     padding-right: 0;
     color: #222722;
     height: 100px;
+    max-width: 90%;
   }
   .NetCalories__equation {
     width: 100%;
@@ -1877,5 +1874,72 @@ img.addable-item__delete {
     font-weight: bold;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-top: 20px;
+  }
+  .SearchFood {
+    margin-bottom: 30px;
+    padding-left: 20px;
+    width: 90%;
+  }
+
+  .SearchFood h1 {
+    display: inline-block;
+    margin-right: 15px;
+  }
+  .FoodsPanel__header--macros {
+    margin-left: 0px;
+    display: flex;
+    flex-direction: row;
+  }
+  .FoodsPanel__header--macros img {
+    max-height: 26px;
+    margin-right: 100px;
+  }
+  .MealItem__macros {
+    margin-left: 0px;
+  }
+  .MealItem__calories {
+    float: right;
+    font-size: 18px;
+    font-weight: bold;
+    top: 15;
+    color: rgb(45, 117, 199);
+  }
+  .FoodsPanel__tabs span {
+    padding: 0 10px 4px 10px;
+    margin-right: 2px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  span.FoodsPanel__tab--createfoodbutton.current {
+    display: inline-block;
+    font-weight: normal;
+    border: none;
+    margin-right: 250px;
+    margin-top: 15px;
+  }
+  span.FoodsPanel__edit-foods.current {
+    display: inline-block;
+    font-weight: normal;
+    border-bottom: 0px solid #d9291c;
+    margin-top: 15px;
+  }
+  span.FoodsPanel__edit-foods {
+    padding: 0;
+    margin: 0 20px 0 12px;
+    color: #c22317;
+    border-bottom: 0px solid #d9291c;
+    font-size: 15px;
+    display: none;
+  }
+  .CreateMealItem__create-button {
+    margin-top: 26px;
+    margin-left: 30px;
+    background-color: #ffffff;
+    border: 2px solid #08ae23;
+    border-radius: 10px;
+    padding: 12px 20px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out, border 0.2s ease-in-out,
+      box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
   }
 }
