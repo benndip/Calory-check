@@ -647,10 +647,10 @@ a {
 
 .AddFoodItem {
   border-bottom: 1px solid #b5c4b7;
-  padding: 18px 30px 18px 23px;
+  padding: 15px 30px 15px 23px;
   background-color: rgb(21, 90, 48);
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
 }
 
 .AddFoodItem__link {
@@ -1941,5 +1941,147 @@ img.addable-item__delete {
     cursor: pointer;
     transition: background-color 0.2s ease-in-out, border 0.2s ease-in-out,
       box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
+  }
+
+  .MealGroup__header--type {
+    font-weight: bold;
+    font-size: 17px;
+    position: relative;
+    top: 2px;
+    display: inline-block;
+    width: 360px;
+    margin-bottom: 5px;
+  }
+  .StatisticsView .page-title {
+    width: 254px;
+    float: left;
+    padding-left: 18px;
+  }
+
+  .StatisticsView__week-select {
+    width: 600px;
+    float: left;
+    padding-left: 18px;
+  }
+
+  .StatisticsView .DayPickerInput input {
+    width: 120px;
+    text-align: center;
+    margin: 0 10px;
+    border-radius: 8px;
+  }
+
+  .StatisticsView__refresh-button {
+    width: 20px;
+    position: relative;
+    bottom: 2px;
+    left: 14px;
+    cursor: pointer;
+  }
+
+  .StatsTable .MealGroup__header--macros {
+    margin-left: 0px;
+    display: flex;
+    flex-direction: row;
+  }
+  .StatsTable .MealGroup__header--macros img {
+    margin-right: 35px;
+  }
+
+  .StatsDayItem__macros span {
+    margin-right: 30px;
+  }
+  .StatsTotalsRow__macros {
+    margin-left: 0px;
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+  }
+  .StatsTotalsRow__macros span {
+    width: 33px;
+    display: inline-block;
+    text-align: center;
+    margin-right: 30px;
+    padding-bottom: 10px;
+  }
+  .WeekAverages {
+    color: #222722;
+    margin-bottom: 80px;
+  }
+
+  .WeekAverages h2 {
+    text-align: center;
+    font-size: 22px;
+    color: #006f12;
+    padding: 0px 10px 10px 10px;
+  }
+
+  .WeekAverages__calories {
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 0;
+    font-weight: bold;
+    font-size: 32px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .WeekAverages__calories--label {
+    font-size: 20px;
+    position: relative;
+    font-weight: normal;
+    padding: 10px;
+    padding-right: 0px;
+  }
+
+  .WeekAverages__calories--value {
+    font-size: 30px;
+  }
+
+  .WeekAverages__calories .WeekAverages__difference {
+    font-size: 18px;
+    position: relative;
+    margin-left: 10px;
+  }
+
+  .WeekAverages__goals-button {
+    position: absolute;
+    bottom: 30px;
+    right: 10px;
+    border-radius: 10px;
+  }
+
+  .WeekAverages__nutrient-row {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+    overflow: hidden;
+  }
+
+  .WeekAverages__nutrient-row img {
+    width: 30px;
+    margin-right: 15px;
+  }
+
+  .WeekAverages__column {
+    padding: 20px 0 20px 130px;
+    height: 72px;
+  }
+
+  .WeekAverages__column:hover,
+  .WeekAverages__calories:hover {
+    background-color: #fafafa;
+  }
+
+  /* major touch */
+
+  .WeekAverages__nutrient-row span.WeekAverages__column {
+    display: flex;
+    flex-direction: row;
+    padding-right: 20px;
+    width: 100%;
   }
 }
