@@ -1685,7 +1685,7 @@ img.addable-item__delete {
     border-bottom: 1px solid #b5c4b7;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
     padding: 10px 0;
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
     width: 10%;
@@ -1723,6 +1723,7 @@ img.addable-item__delete {
     width: 100%;
     margin: 20px auto 10 auto;
   }
+
   .DaySelect {
     margin: 0 0 0 20px;
     width: 250px;
@@ -1813,6 +1814,7 @@ img.addable-item__delete {
     width: 100%;
     display: flex;
     flex-direction: row;
+    margin-left: 10px;
   }
 
   .NetCalories__number {
@@ -1858,6 +1860,10 @@ img.addable-item__delete {
     top: 2px;
   }
 
+  .MacroTotals {
+    padding: 10px;
+  }
+
   .MacroTotals__macro {
     margin-right: 30px;
   }
@@ -1870,12 +1876,12 @@ img.addable-item__delete {
     margin-left: 85px;
   }
   .MacroTotals__caloriesgoal {
-    font-size: 25px;
+    font-size: 17px;
     color: #6c6c6c;
-    padding-right: 20px;
+    padding: 20px 0px 0px 0px;
     font-weight: bold;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-top: 20px;
+    float: left;
   }
   .SearchFood {
     margin-bottom: 30px;
@@ -2132,5 +2138,12 @@ img.addable-item__delete {
   }
   .MyAccountView__account-functions {
     margin: 70px 0px 0px 10px;
+  }
+
+  .Footer {
+    border-top: 1px solid #b6bdb5;
+    margin: 80px auto 18px auto;
+    padding-top: 10px;
+    color: #737972;
   }
 }
