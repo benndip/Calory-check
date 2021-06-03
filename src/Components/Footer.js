@@ -1,14 +1,14 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import deploymentConfig from "../Deployment/deploymentConfig";
-import logo from "../resources/favicon.png";
+import logo from "../resources/BlipCo..png";
 
 class Footer extends Component {
 	render() {
 		return (
 			<div className="Footer container">
-				<img src={logo} alt="EasyCal" />
-				<p>&copy;Nutriment Fact 2021</p>
+				<img src={logo} alt="Nutriment Fact" />
+				<p>&copy;Fiona'a app 2021</p>
 
 				{!this.props.onLogin && (
 					<span className="Footer__links">

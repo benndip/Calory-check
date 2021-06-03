@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import deploymentConfig from "../Deployment/deploymentConfig.js";
-import logo from "../resources/logo.png";
+import logo from "../resources/BlipCo..png";
 
 class Header extends Component {
 	render() {

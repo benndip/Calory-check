@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import deploymentConfig from '../Deployment/deploymentConfig';
 import qs from 'qs';
-import logo from '../resources/login-logo.png';
+import logo from '../resources/BlipCo..png';
 import loader from '../resources/loader.gif';
 
 class LogInView extends Component {
@@ -123,7 +123,7 @@ class LogInView extends Component {
     } else {
       welcomeText = (
         <p>
-          <b>Welcome!</b> EasyCal is a simple nutrition app that helps you keep track of your diet and exercise. <br />
+          <b>Welcome!</b> Nutriment Fact is a simple nutrition app that helps you keep track of your diet and exercise. <br />
           <span>Please log in or register to continue.</span>
         </p>
       );

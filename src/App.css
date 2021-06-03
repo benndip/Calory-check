@@ -41,12 +41,12 @@ a {
 }
 
 .content-container.LogInView {
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .LogInView__logo {
   display: block;
-  margin: 0 auto 50px auto;
+  margin: 0 auto 5px auto;
   width: 340px;
 }
 
@@ -58,7 +58,7 @@ a {
 .LogInView p span {
   display: block;
   font-size: 16px;
-  margin-top: 12px;
+  margin-top: 10px;
 }
 
 .LogInView__form {
